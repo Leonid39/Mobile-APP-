@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl:'https://newsdata.io/api', 
+  apiKey: 'apikey=pub_25795b62689558b5a952ae26aa0dbd2446297&q=metaverse', 
 };
 
 /*

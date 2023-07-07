@@ -1,13 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>news</ion-title>
+    <ion-title>News</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content>
+  <ion-card *ngFor="let article of data?.articles" (click) = "onGoToNewsSinglePage(article)">
+    <ion-card-content>
+    <ion-card-title>{{article.title}}</ion-card-title>
+      </ion-card-content>
+  </ion-card>
+  <ion-header collapse="condense"> 
     <ion-toolbar>
       <ion-title size="large">news</ion-title>
     </ion-toolbar>
-  </ion-header>
 </ion-content>
+</ion-header> 
